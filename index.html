@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be one of the first to try our new software!</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- Custom CSS -->
+    <style>
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 500px; /* Adjust this max-width as needed */
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Rest of your existing CSS styles */
+
+        @media (min-width: 768px) {
+            /* Apply these styles for screens with a width of 768px or more (tablets and desktops) */
+            .container {
+                max-width: 768px; /* Adjust this max-width as needed */
+            }
+
+            .carousel-item {
+                min-height: auto;  /*Reset the minimum height for larger screens
+		/*height: 400px;*/
+            }
+        }
+
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 0;
+        }
+
+        .header p {
+            font-size: 1em;
+        }
+
+        .carousel {
+            margin-bottom: 20px;
+        }
+
+        .carousel-item {
+            /*display: flex;*/
+            /*align-items: center;*/
+            /*justify-content: center;*/
+            min-height: 100vh; /* Make the carousel items at least the full viewport height */
+
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .video-frame {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .video-frame iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        .call-to-action {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .call-to-action button {
+            width: 100%;
+            height: 50px;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .about {
+            padding: 20px 0;
+        }
+
+        .about h2 {
+            font-size: 1.5em;
+            margin-bottom: 0;
+        }
+
+        .about p {
+            font-size: 1em;
+        }
+
+        .contact {
+            padding: 20px 0;
+        }
+
+        .contact h3 {
+            font-size: 1.5em;
+            margin-bottom: 0;
+        }
+
+        .contact p {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Be one of the first to try our new software!</h1>
+        <p>Sign up for our waitlist and be notified when we launch.</p>
+    </header>
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/screenshot-1.png" class="d-block w-100" alt="Software screenshot">
+            </div>
+            <div class="carousel-item">
+                <img src="img/screenshot-2.png" class="d-block w-100" alt="Software screenshot">
+            </div>
+            <div class="carousel-item">
+                <img src="img/screenshot-3.png" class="d-block w-100" alt="Software screenshot">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="video-frame">
+<!--        <iframe width="560" height="315" src="https://www.youtube.com/embed/jhZ7IrIR46c?controls=0"></iframe>-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jhZ7IrIR46c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+
+    <div class="call-to-action">
+    <button type="button" class="btn btn-primary">Sign up for the waitlist</button>
+</div>
+
+<div class="about">
+    <h2>About our software</h2>
+    <p>Our software is the perfect solution for businesses of all sizes. It's easy to use, powerful, and affordable.</p>
+    <p>With our software, you can:</p>
+    <ul>
+        <li>Create presentations, reports, and other documents quickly and easily.</li>
+        <li>Collaborate with team members in real time.</li>
+        <li>Access your work from anywhere.</li>
+        <li>And much more!</li>
+    </ul>
+</div>
+
+<div class="contact">
+    <h3>Contact us</h3>
+    <p>Email: support@company.com</p>
+    <p>Phone: 1-800-555-1212</p>
+</div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $('#carouselExample').carousel({
+            interval: 3000,
+            wrap: true
+        });
+    });
+</script>
+
+</body>
+</html>
